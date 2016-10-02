@@ -20,11 +20,18 @@
 
 示例：
 输入：
-1：((ABCD(x)
-2：)(ryytt())sss)(
+
+((ABCD(x)
+
+)(ryytt())sss)(
+
 
 输出：
-1：((ABCD(x)
-2：$$
-3：)(ryytt())sss)(
-4：?            ?$
+
+((ABCD(x)
+
+$$
+
+)(ryytt())sss)(
+
+?            ?$
