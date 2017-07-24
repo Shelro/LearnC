@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\jx\documents\重要文件\leetcode\mergetwosortedlists\mergetwosortedlists\main.cpp(80): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\jx\documents\重要文件\leetcode\mergetwosortedlists\mergetwosortedlists\main.cpp(85): warning C4018: “<”: 有符号/无符号不匹配
+  MergeTwoSortedLists.vcxproj -> C:\Users\jx\Documents\重要文件\leetcode\MergeTwoSortedLists\Debug\MergeTwoSortedLists.exe
+  MergeTwoSortedLists.vcxproj -> C:\Users\jx\Documents\重要文件\leetcode\MergeTwoSortedLists\Debug\MergeTwoSortedLists.pdb (Full PDB)
