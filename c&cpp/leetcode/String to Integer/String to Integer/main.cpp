@@ -1,8 +1,8 @@
-//
+﻿//
 //  main.cpp
 //  String to Integer
 //
-//  Created by 张映艺 on 2017/6/3.
+//  Created by Shelro on 2017/6/3.
 //  Copyright © 2017年 Yiyi Chang. All rights reserved.
 //
 
