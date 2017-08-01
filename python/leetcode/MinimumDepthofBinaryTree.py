@@ -1,0 +1,33 @@
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def minDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        """
+        My Answer: Time Limit Exceeded
+        if not root:
+            return 0
+        if self.minDepth(root.left)==0 and self.minDepth(root.right)==0:
+            return 1
+        elif self.minDepth(root.left)==0:
+            return self.minDepth(root.right)+1
+        elif self.minDepth(root.right)==0:
+            return self.minDepth(root.left)+1
+        elif self.minDepth(root.left)<self.minDepth(root.right):
+            return self.minDepth(root.left)+1
+        else:
+            return self.minDepth(root.right)+1
+        """
+        if root == None:
+            return 0
+        if root.left==None or root.right==None:
+            return self.minDepth(root.left)+self.minDepth(root.right)+1
+        return min(self.minDepth(root.right),self.minDepth(root.left))+1
