@@ -12,3 +12,13 @@ class Solution(object):
             else:
                 n = n/2
         return True
+        """
+        Another Solution1:
+
+        return (n>0) and (n & (n-1))==0
+        """
+        """
+        Another Solution2:
+
+        return n > 0 and bin(n).count('1') == 1
+        """
