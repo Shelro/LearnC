@@ -10,12 +10,11 @@ class Solution(object):
             isNegative = False
         x = abs(x)
         l = list(str(x))
-        if x >= 2**31-1:
+        res = 0
+        while l:
+            res = res*10 + int(l.pop())
+        if res > 2**31:
             return 0
-        else:
-            res = 0
-            while l:
-                res = res*10 + int(l.pop())
         if isNegative:
             res *= (-1)
         return res
