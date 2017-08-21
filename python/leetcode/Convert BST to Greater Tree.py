@@ -6,6 +6,8 @@
 #         self.right = None
 
 class Solution(object):
+    """
+    MY Answer: Not Right
     def BST2list(self,root,res):
         if not root:
             return res
@@ -25,13 +27,20 @@ class Solution(object):
         self.convertNode(root.right,temp)
     
     def convertBST(self, root):
-        """
-        :type root: TreeNode
-        :rtype: TreeNode
-        """
         if not root:
             return root
         temp = self.BST2list(root,[])
         temp.sort()
         self.convertNode(root,temp)
+    """
+    def convertBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        def reverse(root):
+            return reverse(root.right) + [root] + reverse(root.left) if root else []
+        for a, b in zip(reverse(root), reverse(root)[1:]):
+            b.val += a.val
+        return root
         
